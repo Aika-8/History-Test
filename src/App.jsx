@@ -9,12 +9,12 @@ function App() {
   return (
     <>
       {selectedSetIndex === null ? (
+        <Layout onSelectSet={setSelectedSetIndex} />
+      ) : (
         <TestOptions
           questions={questionSets[selectedSetIndex]}
           onRestart={() => setSelectedSetIndex(null)}
         />
-      ) : (
-        <Layout onSelectSet={setSelectedSetIndex} />
       )}
     </>
   );

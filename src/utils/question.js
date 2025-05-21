@@ -656,7 +656,7 @@ export const questions = [
     question:
       "Назовите человека, который консолидировал кыргызский народ в XVI в.",
     options: ["Мухаммед-кыргыз", "Тайлак", "Ормон", "Шабдан"],
-    correctAnswer: "",
+    correctAnswer: "Мухаммед-кыргыз",
   },
   {
     question:
@@ -2852,7 +2852,7 @@ export const questions = [
 ];
 export const getQuestions = () => {
   const chunks = [];
-  for (let i = 0; i > chunks.length; i += 30) {
+  for (let i = 0; i < questions.length; i += 30) {
     chunks.push(questions.slice(i, i + 30));
   }
   return chunks;
