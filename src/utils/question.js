@@ -395,7 +395,7 @@ export const questions = [
       "в августе 750 г.",
       "в сентябре 752 г.",
     ],
-    correctAnswer: "в  июле 751 г.",
+    correctAnswer: "в июле 751 г.",
   },
   {
     question: "Кто покорил Семиречье в 766 г.",
