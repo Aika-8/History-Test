@@ -6,7 +6,7 @@ export const TestOptions = ({ onSelectSet }) => {
     <StyledContainerOptions>
       <h2>Выберите вариант теста:</h2>
       <div>
-        {[...Array(5)].map((_, i) => (
+        {[...Array(12)].map((_, i) => (
           <StyledButton key={i} onClick={() => onSelectSet(i)}>
             Вариант {i + 1}
           </StyledButton>

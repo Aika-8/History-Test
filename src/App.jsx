@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { getQuestions } from "./utils/question";
-import { Layout } from "./components/Layout";
+import { Test } from "./components/Test";
 import { TestOptions } from "./components/TestOptions";
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       {selectedSetIndex === null ? (
-        <Layout onSelectSet={setSelectedSetIndex} />
+        <TestOptions onSelectSet={setSelectedSetIndex} />
       ) : (
-        <TestOptions
+        <Test
           questions={questionSets[selectedSetIndex]}
           onRestart={() => setSelectedSetIndex(null)}
         />
